@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cdcdcd"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/ColorIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f00"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/red"
+                android:textColor="#000" >
+            </TextView>
+
+            <SeekBar
+                android:id="@+id/SeekBarRed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:max="255"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/progress_horizontal"
+                android:thumb="@drawable/seek_bar_btn"
+                android:thumbOffset="0dp" >
+            </SeekBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#0f0"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/green"
+                android:textColor="#000" >
+            </TextView>
+
+            <SeekBar
+                android:id="@+id/SeekBarGreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:max="255"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/progress_horizontal"
+                android:thumb="@drawable/seek_bar_btn"
+                android:thumbOffset="0dp" >
+            </SeekBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00f"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/blue"
+                android:textColor="#000" >
+            </TextView>
+
+            <SeekBar
+                android:id="@+id/SeekBarBlue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:max="255"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/progress_horizontal"
+                android:thumb="@drawable/seek_bar_btn"
+                android:thumbOffset="0dp" >
+            </SeekBar>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
